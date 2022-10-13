@@ -1,0 +1,54 @@
+.lMainDiv {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("https://media.cntraveler.com/photos/53d9cce16dec627b149d505d/master/pass/airport-counter-check-in-airline-desk.jpg")
+    no-repeat scroll center 0 / cover;
+}
+
+.lContainer {
+  width: 35vw;
+  height: auto;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: expand 0.7s ease-out;
+  box-shadow: 2px black;
+  padding: 1vw;
+  background-color: rgba(255, 255, 255, 0.568);
+}
+.lTitle {
+  color: rgb(53, 46, 46);
+  font-size: medium;
+  font-weight: bolder;
+}
+.form-error {
+  border: 1px solid red;
+  color: red;
+  box-shadow: rgba(230, 14, 14, 0.555) 0px 5px 15px;
+}
+@keyframes expand {
+  0% {
+    opacity: 0.2;
+    top: 5%;
+  }
+  25% {
+    opacity: 0.4;
+    top: 15%;
+  }
+  50% {
+    opacity: 0.6;
+    top: 30%;
+  }
+  75% {
+    opacity: 0.8;
+    top: 45%;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
